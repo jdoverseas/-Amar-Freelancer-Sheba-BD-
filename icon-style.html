@@ -1,0 +1,30 @@
+/* Icon utilities */
+.tool-icon {
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  vertical-align: middle;
+  fill: var(--primary, #1e81ce); /* falls back to a sensible blue */
+  transition: transform 0.22s ease, filter 0.22s ease;
+}
+
+.tool-icon--lg { width: 64px; height: 64px; }
+.tool-icon--sm { width: 28px; height: 28px; }
+
+.icon-circle {
+  background: rgba(30,129,206,0.08);
+  border-radius: 12px;
+  padding: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circle:hover .tool-icon {
+  transform: translateY(-4px) scale(1.05);
+  filter: drop-shadow(0 8px 18px rgba(30,129,206,0.12));
+}
+
+/* color variants */
+.tool-icon--accent { fill: var(--primary); }
+.tool-icon--muted  { fill: #9aa6b2; }
